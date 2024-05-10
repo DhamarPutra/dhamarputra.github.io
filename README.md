@@ -12,7 +12,7 @@ Saya adalah seorang Backend Developer dengan pengalaman dalam pengembangan aplik
 
 - **Deskripsi**: Proyek ini adalah Landing Page Menggunakan Framework ReactJS.
 - **Teknologi**: HTML, CSS, ReactJS
-- **Tautan**: [dhamarputra.github.io/portfolio]
+- **Tautan**: [https://dhamarputra.github.io/portfolio]
 
 ## Kontak
 
