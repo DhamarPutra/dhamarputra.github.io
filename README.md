@@ -1,4 +1,4 @@
-# Portofolio Backend Developer - Dhamar Putra Pangestu
+# Backend Developer - Dhamar Putra Pangestu
 
 Selamat datang di portofolio saya! Saya adalah seorang Backend Developer dengan minat dalam pengembangan aplikasi web dan pengolahan data. Di sini Anda akan menemukan berbagai proyek yang telah saya kerjakan.
 
@@ -8,11 +8,11 @@ Saya adalah seorang Backend Developer dengan pengalaman dalam pengembangan aplik
 
 ## Proyek
 
-### [Nama Proyek 1]
+### [Homepage Frontend With React]
 
-- **Deskripsi**: Proyek ini adalah sebuah API untuk manajemen toko online yang saya bangun menggunakan Django REST Framework.
-- **Teknologi**: Python, Django REST Framework, PostgreSQL
-- **Tautan**: [Tautan ke proyek jika tersedia]
+- **Deskripsi**: Proyek ini adalah Landing Page Menggunakan Framework ReactJS.
+- **Teknologi**: HTML, CSS, ReactJS
+- **Tautan**: [dhamarputra.github.io/portfolio]
 
 ## Kontak
 
