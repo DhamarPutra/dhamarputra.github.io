@@ -1,0 +1,265 @@
+@media (max-width: 767px) {
+    body {
+        background-color: red;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        background-color: blue;
+    }
+}
+
+@media (min-width: 1024px) {
+body {
+    background: linear-gradient(to right, #000000, #585858);
+    padding: 20px;
+}
+
+/*NAV*/
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background: linear-gradient(to right, #000000, #585858);
+}
+
+.logo {
+    width: 48px;
+    height: auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.nama-kelas {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: #c7ff2e;
+    margin-left: 10px;
+    align-items: left;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin-right: 20px;
+}
+
+nav ul a {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 70px;
+    font-size: 20px;
+}
+
+.plus-line-home {
+    display: flex;
+    align-items: center;
+}
+
+.line-home {
+    flex: 24;
+    border: 1px solid #c7ff2e;
+    margin: 0;
+    padding: 0;
+}
+
+.plus-home {
+    flex: 1;
+    text-align: right;
+    font-size: 35px;
+    color: #c7ff2e;
+    margin-right: 15px;
+    padding: 0;
+}
+
+/*HOME*/
+main {
+    margin-top: 50px;
+}
+
+.welcome-home {
+    margin-top: -60px;
+    display: flex;
+    align-items: center;
+    color: #c7ff2e;
+    padding: 10px;
+}
+
+.welcome-home .up-square-home {
+    margin-bottom: 150px;
+    width: 25px;
+    height: 25px;
+    background-color: #c7ff2e;
+    box-shadow: 5px 5px 0px rgba(199, 255, 46, 0.4);
+}
+
+.welcome-home .teks-home {
+    font-size: 240px;
+    margin-left: 50px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    text-shadow: 10px 0px 0px rgba(199, 255, 46, 1), 20px 10px 0px rgba(199, 255, 46, 0.4);
+}
+
+.foto-kelas-home {
+    text-align: center;
+    margin-top: -160px;
+}
+
+.img-main-home {
+    width: 1280px;
+    display: block;
+    margin: 0 auto;
+}
+
+/*About*/
+.about {
+    padding: 100px 0 100px 0;
+}
+
+.head-about {
+    display: flex;
+    align-items: center;
+}
+
+.line-about {
+    flex: 2;
+    border: 3px solid #c9c9b4;
+    margin: 0;
+    padding: 0;
+}
+
+.teks-about {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 60px;
+    color: #c7ff2e;
+    margin: 0 40px 0px 40px;
+    align-items: left;
+    text-transform: uppercase;
+}
+
+.fill-about {
+    width: 1050px;
+    height: 450px;
+    background-color: #c9c9b4;
+    position: relative;
+    margin: 50px auto 50px auto;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+}
+
+.leaf-about {
+    width: 360px;
+    position: absolute;
+    margin: 125px 0 0 1000px;
+    z-index: -1;
+}
+
+.teks-fill-about {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin: 30px;
+    font-size: 30px;
+    position: relative;
+    z-index: 1;
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+/*MENU*/
+.menu {
+    padding: 0 0 100px 0;
+}
+
+.container-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.containerB-menu {
+    margin-top: 200px;
+    width: 280px;
+    height: 360px;
+    background-color: #c7ff2e;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+}
+
+.containerT-menu {
+    margin-top: 100px;
+    width: 280px;
+    height: 360px;
+    background-color: #c7ff2e;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: -2;
+}
+
+.container-img-menu {
+    height: 400px;
+    padding-bottom: 40px;
+    width: auto;
+    z-index: 1;
+    position: absolute;
+}
+
+.teks-container-menu {
+    font-family: 'Dancing Script';
+    font-weight: bold;
+    margin-top: 450px;
+    font-size: 40px;
+    color: #ffffcc;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: 1;
+}
+
+.coretan-img-menu {
+    width: 280px;
+    position: relative;
+    z-index: -1;
+    margin-top: 470px;
+}
+
+.garis-menu {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.garis1-menu {
+    width: 650px;
+    height: 15px;
+    background-color: #9b9b81;
+    margin-bottom: 30px;
+}
+
+.garis2-menu {
+    width: 1280px;
+    height: 15px;
+    background-color: #9b9b81;
+}
+}

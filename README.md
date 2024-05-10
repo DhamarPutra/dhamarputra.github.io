@@ -4,11 +4,11 @@ Selamat datang di portofolio saya! Saya adalah seorang Backend Developer dengan 
 
 ## Tentang Saya
 
-Saya adalah seorang Backend Developer dengan pengalaman dalam pengembangan aplikasi web menggunakan berbagai bahasa pemrograman seperti Python, Java, dan Node.js. Saya memiliki minat khusus dalam pengembangan API, pengolahan data, dan optimisasi performa.
+Saya adalah seorang Backend Developer dengan pengalaman dalam pengembangan aplikasi web menggunakan berbagai bahasa pemrograman seperti PHP, Python, dan Node.js. Saya memiliki minat khusus dalam pengembangan API, pengolahan data, dan optimisasi performa.
 
 ## Proyek
 
-### [Homepage Frontend With React]
+### [Landing Page Frontend With React]
 
 - **Deskripsi**: Proyek ini adalah Landing Page Menggunakan Framework ReactJS.
 - **Teknologi**: HTML, CSS, ReactJS
