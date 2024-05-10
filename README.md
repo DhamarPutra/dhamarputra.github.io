@@ -1,4 +1,4 @@
-# Portofolio Backend Developer - [Nama Anda]
+# Portofolio Backend Developer - [Dhamar Putra Pangestu]
 
 Selamat datang di portofolio saya! Saya adalah seorang Backend Developer dengan minat dalam pengembangan aplikasi web dan pengolahan data. Di sini Anda akan menemukan berbagai proyek yang telah saya kerjakan.
 
@@ -14,20 +14,12 @@ Saya adalah seorang Backend Developer dengan pengalaman dalam pengembangan aplik
 - **Teknologi**: Python, Django REST Framework, PostgreSQL
 - **Tautan**: [Tautan ke proyek jika tersedia]
 
-### [Nama Proyek 2]
-
-- **Deskripsi**: Proyek ini adalah sebuah layanan pemrosesan data untuk menganalisis data penjualan dan memprediksi tren penjualan di masa mendatang.
-- **Teknologi**: Python, Pandas, Flask
-- **Tautan**: [Tautan ke proyek jika tersedia]
-
-[Tambahkan proyek-proyek lain sesuai kebutuhan]
-
 ## Kontak
 
 Jika Anda tertarik untuk berkolaborasi atau ingin tahu lebih lanjut tentang saya, jangan ragu untuk menghubungi saya:
 
-- Email: [alamat email Anda]
-- LinkedIn: [tautan LinkedIn Anda]
+- Email: [damarputra0191@gmail.com]
+- LinkedIn: [https://www.linkedin.com/in/dhamar-putra-49aa60308/]
 
 ## Lisensi
 
