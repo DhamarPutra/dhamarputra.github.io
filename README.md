@@ -1,4 +1,4 @@
-# Portofolio Backend Developer - [Dhamar Putra Pangestu]
+# Portofolio Backend Developer - Dhamar Putra Pangestu
 
 Selamat datang di portofolio saya! Saya adalah seorang Backend Developer dengan minat dalam pengembangan aplikasi web dan pengolahan data. Di sini Anda akan menemukan berbagai proyek yang telah saya kerjakan.
 
