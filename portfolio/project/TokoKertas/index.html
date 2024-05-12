@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Mata Biru</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="shorcut icon" href="img/icon.png">
+	
+</head>
+<body>
+	<table width="100%" id="logo">
+		<td align="center" width="50%">
+			<img src="img/logo.jpg" width="128px">
+		</td>
+		<td></td>
+	</table>
+	<table width="100%" id="data-user" class="heading">
+		<td width="10%"></td>
+		<td width="40%" align="left"><br>
+			Kepada Yth,<br>
+			<select id="pembeli">
+				<option disabled selected hidden>Pilih Nama</option>
+			</select>
+			<p><input placeholder="Nomor Telepon....." class="tlp"  type="number" id="tlp"></p>
+		</td>
+		<td width="40%" align="right">
+			Tanggal:<textarea id="tanggal" class="tanggal" readonly></textarea><br>
+			Jam:<textarea id="waktu" class="tanggal" readonly></textarea>
+		</td>
+	</table>
+	<table width="100%" class="bot-head"></table>
+	<table id="tabel">
+		<tr>
+			<td width="5%">
+			</td>
+			<td width="5%" class="tabel">No
+			</td>
+			<td width="15%" class="tabel">Kode
+			</td>
+			<td width="25%" class="tabel">Nama Barang
+			</td>
+			<td width="10%" class="tabel">Qty
+			</td>
+			<td width="15%" class="tabel">Harga
+			</td>
+			<td width="20%" class="tabel">Jumlah
+			</td>
+			<td width="5%">
+			</td>
+		</tr><tr>
+			<td>
+			</td>
+			<td class="tabel" id="no">
+			</td>
+			<td class="tabel" id="kode">
+			</td>
+			<td class="tabel">
+				<select id="barang">
+					<option selected disabled hidden>Pilih Bahan</option>
+					<option>NCR - Top Putih</option>
+          			<option>NCR - Bottom Merah</option>
+          			<option>NCR - Bottom Kuning</option>
+          			<option>NCR - Bottom Hijau</option>
+          			<option>NCR - Bottom Biru</option>
+          			<option>NCR - Middle Merah</option>
+          			<option>NCR - Middle Kuning</option>
+          			<option>NCR - Middle Hijau</option>
+          			<option>NCR - Middle Biru</option>
+          			<option>NCR - Middle Putih</option>
+          			<option>Samson Bungkus</option>
+          			<option>Cover Lebar</option>
+          			<option>Cover Panjang</option>
+          			<option>Bot/Board</option>
+          			<option>HVS F4 70G/75G</option>
+          			<option>HVS A4 70G/75G</option>
+          			<option>HVS F4 80G</option>
+          			<option>HVS A4 80G</option>
+				</select>
+			</td>
+			<td class="tabel" id="qty">
+				<input type="number" min="0" name="qty">
+			</td>
+			<td class="tabel" id="harga">
+			</td>
+			<td class="tabel" id="jumlah">
+			</td>
+			<td>
+			</td>
+		</tr><tr>
+			<td>
+			</td>
+			<td class="tabel" id="no1">
+			</td>
+			<td class="tabel" id="kode1">
+			</td>
+			<td class="tabel">
+				<select id="barang1">
+					<option selected disabled hidden>Pilih Bahan</option>
+					<option>NCR - Top Putih</option>
+          			<option>NCR - Bottom Merah</option>
+          			<option>NCR - Bottom Kuning</option>
+          			<option>NCR - Bottom Hijau</option>
+          			<option>NCR - Bottom Biru</option>
+          			<option>NCR - Middle Merah</option>
+          			<option>NCR - Middle Kuning</option>
+          			<option>NCR - Middle Hijau</option>
+          			<option>NCR - Middle Biru</option>
+          			<option>NCR - Middle Putih</option>
+          			<option>Samson Bungkus</option>
+          			<option>Cover Lebar</option>
+          			<option>Cover Panjang</option>
+          			<option>Bot/Board</option>
+          			<option>HVS F4 70G/75G</option>
+          			<option>HVS A4 70G/75G</option>
+          			<option>HVS F4 80G</option>
+          			<option>HVS A4 80G</option>
+				</select>
+			</td>
+			<td class="tabel" id="qty1">
+				<input type="number" min="0" name="qty1">
+			</td>
+			<td class="tabel" id="harga1">
+			</td>
+			<td class="tabel" id="jumlah1">
+			</td>
+			<td>
+			</td>
+		</tr><tr>
+			<td>
+			</td>
+			<td class="tabel" id="no2">
+			</td>
+			<td class="tabel" id="kode2">
+			</td>
+			<td class="tabel">
+				<select id="barang2">
+					<option selected disabled hidden>Pilih Bahan</option>
+					<option>NCR - Top Putih</option>
+          			<option>NCR - Bottom Merah</option>
+          			<option>NCR - Bottom Kuning</option>
+          			<option>NCR - Bottom Hijau</option>
+          			<option>NCR - Bottom Biru</option>
+          			<option>NCR - Middle Merah</option>
+          			<option>NCR - Middle Kuning</option>
+          			<option>NCR - Middle Hijau</option>
+          			<option>NCR - Middle Biru</option>
+          			<option>NCR - Middle Putih</option>
+          			<option>Samson Bungkus</option>
+          			<option>Cover Lebar</option>
+          			<option>Cover Panjang</option>
+          			<option>Bot/Board</option>
+          			<option>HVS F4 70G/75G</option>
+          			<option>HVS A4 70G/75G</option>
+          			<option>HVS F4 80G</option>
+          			<option>HVS A4 80G</option>
+				</select>
+			</td>
+			<td class="tabel" id="qty2">
+				<input type="number" min="0" name="qty2">
+			</td>
+			<td class="tabel" id="harga2">
+			</td>
+			<td class="tabel" id="jumlah2">
+			</td>
+			<td>
+			</td>
+		</tr><tr>
+			<td>
+			</td>
+			<td class="tabel" id="no3">
+			</td>
+			<td class="tabel" id="kode3">
+			</td>
+			<td class="tabel">
+				<select id="barang3">
+					<option selected disabled hidden>Pilih Bahan</option>
+					<option>NCR - Top Putih</option>
+          			<option>NCR - Bottom Merah</option>
+          			<option>NCR - Bottom Kuning</option>
+          			<option>NCR - Bottom Hijau</option>
+          			<option>NCR - Bottom Biru</option>
+          			<option>NCR - Middle Merah</option>
+          			<option>NCR - Middle Kuning</option>
+          			<option>NCR - Middle Hijau</option>
+          			<option>NCR - Middle Biru</option>
+          			<option>NCR - Middle Putih</option>
+          			<option>Samson Bungkus</option>
+          			<option>Cover Lebar</option>
+          			<option>Cover Panjang</option>
+          			<option>Bot/Board</option>
+          			<option>HVS F4 70G/75G</option>
+          			<option>HVS A4 70G/75G</option>
+          			<option>HVS F4 80G</option>
+          			<option>HVS A4 80G</option>
+				</select>
+			</td>
+			<td class="tabel" id="qty3">
+				<input type="number" min="0" name="qty3">
+			</td>
+			<td class="tabel" id="harga3">
+			</td>
+			<td class="tabel" id="jumlah3">
+			</td>
+			<td>
+			</td>
+		</tr><tr>
+			<td>
+			</td>
+			<td class="tabel" id="no4">
+			</td>
+			<td class="tabel" id="kode4">
+			</td>
+			<td class="tabel">
+				<select id="barang4">
+					<option selected disabled hidden>Pilih Bahan</option>
+					<option>NCR - Top Putih</option>
+          			<option>NCR - Bottom Merah</option>
+          			<option>NCR - Bottom Kuning</option>
+          			<option>NCR - Bottom Hijau</option>
+          			<option>NCR - Bottom Biru</option>
+          			<option>NCR - Middle Merah</option>
+          			<option>NCR - Middle Kuning</option>
+          			<option>NCR - Middle Hijau</option>
+          			<option>NCR - Middle Biru</option>
+          			<option>NCR - Middle Putih</option>
+          			<option>Samson Bungkus</option>
+          			<option>Cover Lebar</option>
+          			<option>Cover Panjang</option>
+          			<option>Bot/Board</option>
+          			<option>HVS F4 70G/75G</option>
+          			<option>HVS A4 70G/75G</option>
+          			<option>HVS F4 80G</option>
+          			<option>HVS A4 80G</option>
+				</select>
+			</td>
+			<td class="tabel" id="qty4">
+				<input type="number" min="0" name="qty4">
+			</td>
+			<td class="tabel" id="harga4">
+			</td>
+			<td class="tabel" id="jumlah4">
+			</td>
+			<td>
+			</td>
+		</tr><tr>
+			<td>
+			</td>
+			<td class="tabel" id="no5">
+			</td>
+			<td class="tabel" id="kode5">
+			</td>
+			<td class="tabel">
+				<select id="barang5">
+					<option selected disabled hidden>Pilih Bahan</option>
+					<option>NCR - Top Putih</option>
+          			<option>NCR - Bottom Merah</option>
+          			<option>NCR - Bottom Kuning</option>
+          			<option>NCR - Bottom Hijau</option>
+          			<option>NCR - Bottom Biru</option>
+          			<option>NCR - Middle Merah</option>
+          			<option>NCR - Middle Kuning</option>
+          			<option>NCR - Middle Hijau</option>
+          			<option>NCR - Middle Biru</option>
+          			<option>NCR - Middle Putih</option>
+          			<option>Samson Bungkus</option>
+          			<option>Cover Lebar</option>
+          			<option>Cover Panjang</option>
+          			<option>Bot/Board</option>
+          			<option>HVS F4 70G/75G</option>
+          			<option>HVS A4 70G/75G</option>
+          			<option>HVS F4 80G</option>
+          			<option>HVS A4 80G</option>
+				</select>
+			</td>
+			<td class="tabel" id="qty5">
+				<input type="number" min="0" name="qty5">
+			</td>
+			<td class="tabel" id="harga5">
+			</td>
+			<td class="tabel" id="jumlah5">
+			</td>
+			<td>
+			</td>
+		</tr><tr>
+			<td>
+			</td>
+			<td class="tabel" id="no6">
+			</td>
+			<td class="tabel" id="kode6">
+			</td>
+			<td class="tabel">
+				<select id="barang6">
+					<option selected disabled hidden>Pilih Bahan</option>
+					<option>NCR - Top Putih</option>
+          			<option>NCR - Bottom Merah</option>
+          			<option>NCR - Bottom Kuning</option>
+          			<option>NCR - Bottom Hijau</option>
+          			<option>NCR - Bottom Biru</option>
+          			<option>NCR - Middle Merah</option>
+          			<option>NCR - Middle Kuning</option>
+          			<option>NCR - Middle Hijau</option>
+          			<option>NCR - Middle Biru</option>
+          			<option>NCR - Middle Putih</option>
+          			<option>Samson Bungkus</option>
+          			<option>Cover Lebar</option>
+          			<option>Cover Panjang</option>
+          			<option>Bot/Board</option>
+          			<option>HVS F4 70G/75G</option>
+          			<option>HVS A4 70G/75G</option>
+          			<option>HVS F4 80G</option>
+          			<option>HVS A4 80G</option>
+				</select>
+			</td>
+			<td class="tabel" id="qty6">
+				<input type="number" min="0" name="qty6">
+			</td>
+			<td class="tabel" id="harga6">
+			</td>
+			<td class="tabel" id="jumlah6">
+			</td>
+			<td>
+			</td>
+		</tr><tr>
+			<td>
+			</td>
+			<td class="tabel" id="no7">
+			</td>
+			<td class="tabel" id="kode7">
+			</td>
+			<td class="tabel">
+				<select id="barang7">
+					<option selected disabled hidden>Pilih Bahan</option>
+					<option>NCR - Top Putih</option>
+          			<option>NCR - Bottom Merah</option>
+          			<option>NCR - Bottom Kuning</option>
+          			<option>NCR - Bottom Hijau</option>
+          			<option>NCR - Bottom Biru</option>
+          			<option>NCR - Middle Merah</option>
+          			<option>NCR - Middle Kuning</option>
+          			<option>NCR - Middle Hijau</option>
+          			<option>NCR - Middle Biru</option>
+          			<option>NCR - Middle Putih</option>
+          			<option>Samson Bungkus</option>
+          			<option>Cover Lebar</option>
+          			<option>Cover Panjang</option>
+          			<option>Bot/Board</option>
+          			<option>HVS F4 70G/75G</option>
+          			<option>HVS A4 70G/75G</option>
+          			<option>HVS F4 80G</option>
+          			<option>HVS A4 80G</option>
+				</select>
+			</td>
+			<td class="tabel" id="qty7">
+				<input type="number" min="0" name="qty7">
+			</td>
+			<td class="tabel" id="harga7">
+			</td>
+			<td class="tabel" id="jumlah7">
+			</td>
+			<td>
+			</td>
+		</tr><tr>
+			<td>
+			</td>
+			<td class="tabel" id="no8">
+			</td>
+			<td class="tabel" id="kode8">
+			</td>
+			<td class="tabel">
+				<select id="barang8">
+					<option selected disabled hidden>Pilih Bahan</option>
+					<option>NCR - Top Putih</option>
+          			<option>NCR - Bottom Merah</option>
+          			<option>NCR - Bottom Kuning</option>
+          			<option>NCR - Bottom Hijau</option>
+          			<option>NCR - Bottom Biru</option>
+          			<option>NCR - Middle Merah</option>
+          			<option>NCR - Middle Kuning</option>
+          			<option>NCR - Middle Hijau</option>
+          			<option>NCR - Middle Biru</option>
+          			<option>NCR - Middle Putih</option>
+          			<option>Samson Bungkus</option>
+          			<option>Cover Lebar</option>
+          			<option>Cover Panjang</option>
+          			<option>Bot/Board</option>
+          			<option>HVS F4 70G/75G</option>
+          			<option>HVS A4 70G/75G</option>
+          			<option>HVS F4 80G</option>
+          			<option>HVS A4 80G</option>
+				</select>
+			</td>
+			<td class="tabel" id="qty8">
+				<input type="number" min="0" name="qty8">
+			</td>
+			<td class="tabel" id="harga8">
+			</td>
+			<td class="tabel" id="jumlah8">
+			</td>
+			<td>
+			</td>
+		</tr><tr>
+			<td>
+			</td>
+			<td class="tabel" id="no9">
+			</td>
+			<td class="tabel" id="kode9">
+			</td>
+			<td class="tabel">
+				<select id="barang9">
+					<option selected disabled hidden>Pilih Bahan</option>
+					<option>NCR - Top Putih</option>
+          			<option>NCR - Bottom Merah</option>
+          			<option>NCR - Bottom Kuning</option>
+          			<option>NCR - Bottom Hijau</option>
+          			<option>NCR - Bottom Biru</option>
+          			<option>NCR - Middle Merah</option>
+          			<option>NCR - Middle Kuning</option>
+          			<option>NCR - Middle Hijau</option>
+          			<option>NCR - Middle Biru</option>
+          			<option>NCR - Middle Putih</option>
+          			<option>Samson Bungkus</option>
+          			<option>Cover Lebar</option>
+          			<option>Cover Panjang</option>
+          			<option>Bot/Board</option>
+          			<option>HVS F4 70G/75G</option>
+          			<option>HVS A4 70G/75G</option>
+          			<option>HVS F4 80G</option>
+          			<option>HVS A4 80G</option>
+				</select>
+			</td>
+			<td class="tabel" id="qty9">
+				<input type="number" min="0" name="qty9">
+			</td>
+			<td class="tabel" id="harga9">
+			</td>
+			<td class="tabel" id="jumlah9">
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td class="tabel"></td>
+			<td class="tabel"></td>
+			<td class="total">Total&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td class="tabel" id="qtytotal"></td>
+			<td class="tabel"></td>
+			<td class="tabel">
+				<span id="jumlahtotal"></span>
+			</td>
+			<td></td>
+		</tr>
+	</table>
+	<table width="100%">
+		<br>
+		<td align="center">
+			<div align="center"><a id="kirim" class="convbutton" onclick="kirim()">Buat Pesanan</a></div>
+		</td>
+	</table>
+	<table width="100%">
+		<td>
+			<span id="dbqty" href="#" type="number"></span>
+		</td>
+		<td>
+			<span id="dbqty1" href="#" type="number"></span>
+		</td>
+		<td>
+			<span id="dbqty2" href="#" type="number"></span>
+		</td>
+		<td>
+			<span id="dbqty3" href="#" type="number"></span>
+		</td>
+		<td>
+			<span id="dbqty4" href="#" type="number"></span>
+		</td>
+		<td>
+			<span id="dbqty5" href="#" type="number"></span>
+		</td>
+		<td>
+			<span id="dbqty6" href="#" type="number"></span>
+		</td>
+		<td>
+			<span id="dbqty7" href="#" type="number"></span>
+		</td>
+		<td>
+			<span id="dbqty8" href="#" type="number"></span>
+		</td>
+		<td>
+			<span id="dbqty9" href="#" type="number"></span>
+		</td>
+	</table>
+	<script src="js/script.js"></script>
+</body>
+</html>

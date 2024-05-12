@@ -1,0 +1,88 @@
+html{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1vh;
+	caret-color: transparent;
+}
+body{
+	display: inline;
+}
+.heading{
+	background-color: #bdd7ee;
+	height: 70px;
+}
+.tanggal{
+	width: 40%;
+	resize: none;
+	height: 15px;
+	vertical-align: middle;
+	text-align: right;
+	background: rgba(0, 0, 0, 0);
+	border: rgba(0, 0, 0, 0);
+}
+.bot-head{
+	background-color: #deebf5;
+	height: 20px;
+}
+.tabel{
+	border: 1px solid black;
+	font-size: 16px;
+	text-align: center;
+	resize: none;
+}
+input {
+	width: 90%;
+	border: none;
+	text-align: center;
+}
+.total {
+	border: 1px solid black;
+	font-size: 16px;
+	text-align: right;
+	font-weight: bold;
+	resize: none;
+}
+.kirim {
+	font-size: 20px;
+	background-color: limegreen;
+	color: black;
+	font-weight: bold;
+}
+.kirim:hover {
+	background-color: red;
+}
+.convbutton{
+	padding: 10px 20px;
+	margin: 10px;
+	border-radius: 5px;
+	border: none;
+	background-color: #4CAF50;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	margin: auto;
+	text-decoration: none;
+}
+
+.tlp {
+	width: 65%;
+	font-size: 14px;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+/* Semua input type number */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Input type number dengan id "qty" */
+#qty::-webkit-inner-spin-button,
+#qty::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
