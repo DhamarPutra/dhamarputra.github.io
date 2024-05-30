@@ -72,9 +72,13 @@ body {
   background-position: center;
   text-align: center;
 }
+#maps {
+}
 #contact {
+  margin-top: 50px;
   background-size: cover;
   background-position: center;
+
   text-align: left;
 }
 .layanan img {
