@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* HTML */
+* {
+  scroll-behavior: smooth;
+  font-family: "Montserrat";
+}
+html {
+  overflow-x: hidden;
+}
+section {
+  overflow: auto;
+}
+
+/* Navbar */
+.active {
+  background-color: rgb(226, 226, 226);
+  border-radius: 10px;
+}
+.navbar {
+  background-color: white;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+
+/* Company */
+.company {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.company::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/home.jpg");
+  background-size: cover;
+  filter: brightness(0.7) contrast(1.1) saturate(0.8) hue-rotate(-10deg);
+  z-index: -1;
+}
+.company .name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.company .name h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 3rem;
+  z-index: 1;
+}
+.company .visi-misi {
+  height: auto;
+  display: flex;
+  z-index: 1;
+}
+.company p {
+  color: #fff;
+  z-index: 1;
+  text-align: justify;
+}
+.company::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(1, 1, 3, 1) 2%,
+    rgba(255, 255, 255, 0) 50%
+  );
+}
+
+/* Visi Misi */
+.visi-misi {
+  min-height: 100vh;
+  position: relative;
+}
+.visi-misi::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/shipping.jpg");
+  background-size: cover;
+  filter: brightness(0.7) contrast(1.1) saturate(0.8) hue-rotate(-10deg);
+  z-index: -1;
+}
+.visi-misi p {
+  text-align: justify;
+  word-spacing: 5px;
+  font-size: large;
+  font-weight: 500;
+}
+.visi-misi h2 {
+  color: black;
+  z-index: 1;
+  text-align: start;
+}
+
+/* Layanan */
+.layanan img {
+  width: 100%;
+  aspect-ratio: 1/0.5;
+  object-fit: cover;
+  padding: 0;
+  border-radius: 10px 10px 0 0;
+}
+.layanan:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Kontak */
+#contact {
+  background-color: gray;
+  color: whitesmoke;
+}
+.garis {
+  background-color: whitesmoke;
+  color: gray;
+  height: 1px;
+  width: 170px;
+}
+.isi {
+  text-align: left;
+  font-size: small;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
