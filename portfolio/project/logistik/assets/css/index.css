@@ -1,0 +1,97 @@
+/* Warna sesuai dengan palet yang diberikan */
+body {
+  background-color: #ffffff; /* Warna latar belakang */
+}
+.navbar {
+  background-color: #26a4ca; /* Warna navbar */
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+.navbar-brand:hover,
+.navbar-nav .nav-link:hover {
+  color: #378ce7; /* Warna teks navbar saat dihover */
+}
+.footer-top {
+  background-color: #dff5ff; /* Warna latar belakang footer top */
+}
+.footer {
+  background-color: #5356ff; /* Warna latar belakang footer bottom */
+}
+.footer,
+.footer a {
+  color: #ffffff; /* Warna teks footer */
+}
+
+.mouse:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease-in-out;
+}
+
+#home {
+  text-align: center;
+  position: relative;
+  color: white;
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../img/home.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.3);
+  z-index: -1;
+}
+
+#about {
+  margin-top: 50px;
+  color: white !important;
+  text-align: center;
+  position: relative;
+}
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(../img/about.jpg);
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.3);
+  z-index: -1;
+}
+#service {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+#contact {
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+}
+.layanan img {
+  width: 100%;
+  aspect-ratio: 1/0.5;
+  object-fit: cover;
+  padding: 0;
+  border-radius: 10px 10px 0 0;
+}
+.layanan:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.active {
+  background-color: #01417c;
+  color: white !important;
+  padding: 5px !important;
+  border-radius: 10px;
+
+}
