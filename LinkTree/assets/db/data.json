@@ -1,0 +1,15 @@
+{
+    "profile_picture": "./assets/img/profile_picture.jpg",
+    "username": "@ISC SD TEAM2",
+    "description": "PKI (Programmer Keren Indonesia)",
+    "links": [
+        {
+            "name": "Logistik",
+            "url": "https://dhamarputra.github.io/logistik_collab/"
+        },
+        {
+            "name": "Admin Page",
+            "url": "https://realizing-reader.000webhostapp.com/"
+        }
+    ]
+}
