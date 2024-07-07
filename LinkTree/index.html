@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Linktree</title>
+    <title id="icon"></title>
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
   </head>
   <body>
     <div class="container text-center mt-4" id="profile-container"></div>
@@ -29,6 +30,7 @@
           .then((response) => response.json())
           .then((data) => {
             const container = document.getElementById("profile-container");
+            const icon = document.getElementById('icon');
             container.innerHTML = `
                 <img src="${
                   data.profile_picture
@@ -45,6 +47,7 @@
                       .join("")}
                 </div>
             `;
+            icon.innerText = `${data.username} | Linktree`
           })
           .catch((error) => console.error("Error fetching data:", error));
         fetch("./assets/db/contributor.json")
