@@ -1,0 +1,28 @@
+[
+    {
+      "profile_picture": "./assets/img/contributor/Stephen-Alfredo-Gultom.png",
+      "name": "Stephen Alfredo Gultom",
+      "status": "inactive"
+    },
+    {
+      "profile_picture": "./assets/img/profile_picture.jpg",
+      "name": "Muhamad Reza Pratama",
+      "status": "active"
+    },
+    {
+      "profile_picture": "./assets/img/profile_picture.jpg",
+      "name": "Ahmad Zaeladi",
+      "status": "active"
+    },
+    {
+      "profile_picture": "./assets/img/profile_picture.jpg",
+      "name": "Fauzan Azhari",
+      "status": "active"
+    },
+    {
+      "profile_picture": "./assets/img/profile_picture.jpg",
+      "name": "Dhamar putra pangestu",
+      "status": "active"
+    }
+  ]
+  

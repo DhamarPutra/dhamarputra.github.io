@@ -1,8 +1,8 @@
 body {
     background: linear-gradient(to bottom, #4caac1, #071b8c);
+    min-height: 100vh;
+    background-attachment: fixed;
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
     font-family: 'Poppins', sans-serif;
     color: white;
 }
@@ -34,4 +34,22 @@ body {
 
 h3 {
     font-weight: bold;
+}
+
+.contributor-card {
+    width: 150px;
+    min-height: 200px;
+    display: inline-block;
+    margin-right: 20px;
+    vertical-align: top;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.inactive {
+    filter: grayscale();
 }
