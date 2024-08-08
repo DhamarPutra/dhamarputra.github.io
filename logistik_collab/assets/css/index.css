@@ -38,7 +38,7 @@ section {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../img/home.jpg");
+  background-image: url("https://github.com/DhamarPutra/dhamarputra.github.io/blob/main/logistik_collab/assets/img/home.jpg?raw=true");
   background-size: cover;
   filter: brightness(0.7) contrast(1.1) saturate(0.8) hue-rotate(-10deg);
   z-index: -1;
@@ -83,14 +83,16 @@ section {
 /* Visi Misi */
 .visi-misi {
   min-height: 100vh;
-  position: relative;
+  position: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .visi-misi::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../img/shipping.jpg");
+  background-image: url("https://github.com/DhamarPutra/dhamarputra.github.io/blob/main/logistik_collab/assets/img/shipping.jpg?raw=true");
   background-size: cover;
   filter: brightness(0.7) contrast(1.1) saturate(0.8) hue-rotate(-10deg);
   z-index: -1;
@@ -138,4 +140,11 @@ section {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+@media (max-width: 992px) {
+  .visi-misi p,
+  .visi-misi h2 {
+    color: black;
+  }
 }
