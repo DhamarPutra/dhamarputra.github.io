@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar with Tailwind CSS</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap -->
+    <!-- Slick Slider CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    />
+
+    <!-- jQuery (Slick Slider depends on jQuery) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Slick Slider JS -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section>
+      <nav class="bg-blue-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="/" class="text-white text-lg font-bold">Toko Bunga</a>
+          <button
+            class="text-white block lg:hidden focus:outline-none"
+            id="navbar-toggle"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+          <div
+            class="hidden w-full lg:flex lg:items-center lg:w-auto"
+            id="navbar-menu"
+          >
+            <ul class="lg:flex lg:space-x-6 text-white">
+              <li>
+                <a
+                  href="#home"
+                  class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#product"
+                  class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
+                  >Product</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#review"
+                  class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
+                  >Review</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#client"
+                  class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
+                  >Client</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="block mt-4 lg:inline-block lg:mt-0 hover:text-gray-400"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- End Navbar -->
+
+    <!-- Main/Home -->
+    <section id="home" class="bg-cover bg-center h-screen">
+      <div
+        class="bg-blue-900 bg-opacity-50 h-full flex flex-col justify-center items-center text-center"
+      >
+        <h1 class="text-4xl md:text-6xl text-white font-bold mb-4">
+          Toko Bunga
+        </h1>
+        <p class="text-lg md:text-2xl text-white mb-6">
+          "Temani Wisuda Mu Dengan Buket Kami"
+        </p>
+        <a
+          href="#"
+          class="px-6 py-3 bg-blue-600 text-white rounded-full text-lg hover:bg-blue-700 transition duration-300"
+          >Pelajari Lebih Lanjut</a
+        >
+      </div>
+    </section>
+    <!-- End Main/Home -->
+
+    <!-- Product List Section -->
+    <section id="product" class="py-12 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Our Products</h2>
+        <div class="flex flex-wrap -mx-4">
+          <!-- Card 1 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://outerbloom.com/cdn/shop/products/Pink-Darling-Bouquet.jpg"
+                alt="Product 1"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://outerbloom.com/cdn/shop/products/Classic-Midnight-Hand-Bouquet---Fiery-Red-36.jpg"
+                alt="Product 2"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://herawatifloristsurabaya.com/wp-content/uploads/2024/01/Hand-Bouquet-012.jpg"
+                alt="Product 3"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 4 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2023/4/29/982dfb1d-eab9-41fa-bbce-e776429d9afd.jpg"
+                alt="Product 4"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 5 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://pinus.florist/wp-content/uploads/2021/09/WhatsApp-Image-2021-08-31-at-1.41.12-PM-1.jpeg"
+                alt="Product 4"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQQ9SgZgOg0hl_nu-5JullSRCvfTtTh_-ABA&s"
+                alt="Product 4"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://images.tokopedia.net/img/cache/500-square/VqbcmM/2023/9/20/112bbdf4-acb0-45c3-8aca-01dfb12c0fa6.jpg"
+                alt="Product 4"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://images.tokopedia.net/img/cache/700/VqbcmM/2023/9/17/563d8419-9b1a-4dfb-91c7-43bba53b25a8.jpg"
+                alt="Product 4"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://asset.bloomnation.com/c_limit,d_vendor:global:catalog:product:image.png,f_auto,fl_preserve_transparency,q_auto,w_1005/v1687591811/vendor/2617/catalog/product/2/0/20230623080719_file_6495fb7731863_6495fd86ce104.jpg"
+                alt="Product 4"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://image.floranext.com/shared/catalog/product/W/r/Wrapped-DC-1.png.webp?h=700&w=700&r=255&g=255&b=255"
+                alt="Product 4"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://images.floweradvisor.com/Adit/Blog%20FA/Blog%20ID/Classic%20Red.webp"
+                alt="Product 4"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Card 6 -->
+          <div class="w-full md:w-1/6 px-4 mb-8">
+            <div
+              class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition duration-300"
+            >
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSApgatQ6OQmQONN5gcGNhZ_bsB4n6HOXC2SQ&s"
+                alt="Product 4"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h3 class="text-xl font-bold mb-2">Product</h3>
+                <p class="text-gray-600 mb-4 line-clamp-2">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cumque incidunt modi officiis numquam? A inventore officia
+                  omnis quod expedita culpa, tempora quaerat, eum obcaecati,
+                  repellendus sequi! Pariatur placeat sed a.
+                </p>
+                <a
+                  href="#"
+                  class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Detail</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Of Product List -->
+
+    <!-- Review Section -->
+    <section id="review" class="py-12 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-8">Customer Reviews</h2>
+        <div class="review-slider">
+          <!-- Review 1 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Produk ini luar biasa! Sangat memenuhi harapan saya dan saya
+                akan merekomendasikannya kepada teman-teman."
+              </p>
+              <h4 class="font-bold text-lg">- Jane Doe</h4>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Pelayanan pelanggan yang sangat baik! Saya merasa dihargai
+                sebagai pelanggan."
+              </p>
+              <h4 class="font-bold text-lg">- John Smith</h4>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Kualitas produk sangat baik dan pengirimannya cepat. Saya pasti
+                akan membeli lagi!"
+              </p>
+              <h4 class="font-bold text-lg">- Sarah Lee</h4>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Pengalaman berbelanja yang menyenangkan. Terima kasih!"
+              </p>
+              <h4 class="font-bold text-lg">- Michael Brown</h4>
+            </div>
+          </div>
+          <!-- Review 1 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Produk ini luar biasa! Sangat memenuhi harapan saya dan saya
+                akan merekomendasikannya kepada teman-teman."
+              </p>
+              <h4 class="font-bold text-lg">- Jane Doe</h4>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Pelayanan pelanggan yang sangat baik! Saya merasa dihargai
+                sebagai pelanggan."
+              </p>
+              <h4 class="font-bold text-lg">- John Smith</h4>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Kualitas produk sangat baik dan pengirimannya cepat. Saya pasti
+                akan membeli lagi!"
+              </p>
+              <h4 class="font-bold text-lg">- Sarah Lee</h4>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Pengalaman berbelanja yang menyenangkan. Terima kasih!"
+              </p>
+              <h4 class="font-bold text-lg">- Michael Brown</h4>
+            </div>
+          </div>
+          <!-- Review 1 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Produk ini luar biasa! Sangat memenuhi harapan saya dan saya
+                akan merekomendasikannya kepada teman-teman."
+              </p>
+              <h4 class="font-bold text-lg">- Jane Doe</h4>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Pelayanan pelanggan yang sangat baik! Saya merasa dihargai
+                sebagai pelanggan."
+              </p>
+              <h4 class="font-bold text-lg">- John Smith</h4>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Kualitas produk sangat baik dan pengirimannya cepat. Saya pasti
+                akan membeli lagi!"
+              </p>
+              <h4 class="font-bold text-lg">- Sarah Lee</h4>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Pengalaman berbelanja yang menyenangkan. Terima kasih!"
+              </p>
+              <h4 class="font-bold text-lg">- Michael Brown</h4>
+            </div>
+          </div>
+          <!-- Review 1 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Produk ini luar biasa! Sangat memenuhi harapan saya dan saya
+                akan merekomendasikannya kepada teman-teman."
+              </p>
+              <h4 class="font-bold text-lg">- Jane Doe</h4>
+            </div>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Pelayanan pelanggan yang sangat baik! Saya merasa dihargai
+                sebagai pelanggan."
+              </p>
+              <h4 class="font-bold text-lg">- John Smith</h4>
+            </div>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Kualitas produk sangat baik dan pengirimannya cepat. Saya pasti
+                akan membeli lagi!"
+              </p>
+              <h4 class="font-bold text-lg">- Sarah Lee</h4>
+            </div>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="p-4">
+            <div class="bg-blue-500 text-white shadow-md rounded-lg p-6">
+              <p class="mb-4">
+                "Pengalaman berbelanja yang menyenangkan. Terima kasih!"
+              </p>
+              <h4 class="font-bold text-lg">- Michael Brown</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-gray-100 py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-center mb-8">About Us</h2>
+          <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+              Toko bunga kami telah berdiri sejak tahun 2000 dan selalu memberikan pelayanan terbaik kepada pelanggan. Kami percaya bahwa bunga dapat membawa kebahagiaan dan kami ingin berbagi kebahagiaan itu dengan Anda.
+          </p>
+      </div>
+    </section>
+    <!-- End About -->
+
+    <!-- Customer -->
+    <section id="clients" class="py-20 bg-white">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-center mb-8">Client</h2>
+          <p class="mt-4 text-gray-600">Kami bangga telah bekerja sama dengan banyak perusahaan dan individu yang luar biasa</p>
+          <div class="mt-10 grid grid-cols-2 md:grid-cols-4 gap-10 items-center">
+              <!-- Client 1 -->
+              <div class="p-4">
+                  <img src="https://via.placeholder.com/150x100" alt="Client 1 Logo" class="mx-auto">
+                  <p class="mt-2 text-gray-600">Perusahaan A</p>
+              </div>
+              <!-- Client 2 -->
+              <div class="p-4">
+                  <img src="https://via.placeholder.com/150x100" alt="Client 2 Logo" class="mx-auto">
+                  <p class="mt-2 text-gray-600">Perusahaan B</p>
+              </div>
+              <!-- Client 3 -->
+              <div class="p-4">
+                  <img src="https://via.placeholder.com/150x100" alt="Client 3 Logo" class="mx-auto">
+                  <p class="mt-2 text-gray-600">Perusahaan C</p>
+              </div>
+              <!-- Client 4 -->
+              <div class="p-4">
+                  <img src="https://via.placeholder.com/150x100" alt="Client 4 Logo" class="mx-auto">
+                  <p class="mt-2 text-gray-600">Perusahaan D</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- end Customer -->
+
+    <!-- Contact -->
+    <section id="contact" class="bg-gray-100 py-20">
+      <div class="container mx-auto text-center">
+        <h2 class="text-3xl font-bold text-center mb-8">Contact</h2>
+          <p class="mt-4 text-gray-600">Kami siap membantu Anda untuk semua kebutuhan bunga</p>
+          <form class="mt-10 max-w-xl mx-auto bg-white p-8 shadow-lg rounded-lg">
+              <div class="mb-6">
+                  <label for="name" class="block text-left text-gray-700 font-semibold">Nama</label>
+                  <input type="text" id="name" class="w-full mt-2 p-3 border border-gray-300 rounded-lg" placeholder="Nama Anda">
+              </div>
+              <div class="mb-6">
+                  <label for="email" class="block text-left text-gray-700 font-semibold">Email</label>
+                  <input type="email" id="email" class="w-full mt-2 p-3 border border-gray-300 rounded-lg" placeholder="Email Anda">
+              </div>
+              <div class="mb-6">
+                  <label for="message" class="block text-left text-gray-700 font-semibold">Pesan</label>
+                  <textarea id="message" rows="5" class="w-full mt-2 p-3 border border-gray-300 rounded-lg" placeholder="Pesan Anda"></textarea>
+              </div>
+              <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-green-600">Kirim Pesan</button>
+          </form>
+      </div>
+      </section>
+     <!-- end conctact -->
+
+    <!-- Tailwind CSS Script -->
+    <script>
+      const navbarToggle = document.getElementById("navbar-toggle");
+      const navbarMenu = document.getElementById("navbar-menu");
+
+      navbarToggle.addEventListener("click", () => {
+        navbarMenu.classList.toggle("hidden");
+      });
+    </script>
+    <!-- Slider JS -->
+    <script>
+      $(document).ready(function () {
+        $(".review-slider").slick({
+          dots: true,
+          infinite: true,
+          speed: 500,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+        });
+      });
+    </script>
+  </body>
+</html>

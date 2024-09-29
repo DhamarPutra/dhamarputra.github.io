@@ -4,16 +4,20 @@
     "description": "PKI (Programmer Keren Indonesia)",
     "links": [
         {
-            "name": "Logistik",
+            "name": "LandingPage Logistik",
             "url": "https://dhamarputra.github.io/logistik_collab/"
         },
         {
-            "name": "Admin Page Logistik",
+            "name": "AdminPage Logistik",
             "url": "http://pki.rf.gd/"
         },
         {
             "name": "Digital Product",
             "url": "https://lynk.id/pki-k2"
+        },
+        {
+            "name": "LandingPage (Project 1)",
+            "url": "https://dhamarputra.github.io/Florist/"
         }
     ]
 }
