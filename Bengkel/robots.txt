@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /login.html
+Allow: /
+
+Sitemap: https://www.kuninganmotor.com//sitemap.xml

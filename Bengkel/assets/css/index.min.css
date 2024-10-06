@@ -1,0 +1,280 @@
+html, body {
+  overflow-x: hidden; /* Cegah scroll horizontal di seluruh halaman */
+}
+
+/* Reset margin dan overflow untuk menghindari horizontal scroll */
+body {
+  margin: 0;
+  overflow-x: hidden; /* Cegah scroll horizontal */
+  font-family: "Montserrat", sans-serif; /* Default font untuk teks */
+}
+
+/* Sembunyikan scrollbar */
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Untuk heading atau judul menggunakan Oswald */
+h1, h2, h3, .judul {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Untuk teks paragraf atau deskripsi menggunakan Montserrat */
+body, p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+/* Untuk subheading atau teks penting */
+strong, h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 50;
+}
+
+/* Atur iframe agar responsif dan tidak menyebabkan overflow */
+iframe {
+  width: 100%; /* Sesuaikan dengan lebar layar */
+  height: auto; /* Tinggi otomatis */
+  aspect-ratio: 16/9; /* Jaga rasio aspek */
+}
+
+/* Background untuk introduction dan about-service */
+.introduction {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../img/main.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%; /* Sesuaikan dengan layar */
+  height: auto; /* Sesuaikan tinggi */
+}
+
+.about-service {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../img/1\ \(1\).webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: auto; /* Sesuaikan tinggi secara proporsional */
+}
+
+.about-service img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.logo {
+  filter: drop-shadow(1px 1px 1px rgba(255, 255, 255, 0.5));
+  width: 64px;
+  height: 100%;
+}
+
+/* Footer responsif */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.brand-logo {
+  height: 60px;
+  margin: 10px;
+}
+
+.team-photo {
+  width: 100%;
+  height: 720px; /* Disesuaikan untuk desktop, akan diatur di mobile */
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonials {
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+
+/* Atur .container agar responsif */
+.container {
+  width: 100%; /* Sesuaikan dengan layar */
+  max-width: 1200px; /* Batasi lebar maksimal */
+  margin: 0 auto;
+  padding: 0 15px; /* Beri padding kecil di sisi kanan dan kiri */
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Swiper container responsif */
+.swiper-container {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex: 0 0 auto;
+}
+
+.testimonial-content {
+  width: 100%; /* Atur width ke 100% untuk responsif */
+  max-width: 600px; /* Batas maksimal lebar */
+  text-align: center;
+}
+
+.testimonial-text {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.testimonial-rating {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.star {
+  color: gold;
+  margin: 0 2px;
+}
+
+.star-inactive {
+  color: #ddd;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+
+.swiper-pagination {
+  bottom: 10px;
+}
+
+/* Galeri gambar */
+.gallery img {
+  width: 100%; /* Sesuaikan lebar dengan kontainer */
+  height: 200px;
+  object-fit: cover; /* Jaga rasio aspek */
+}
+
+.service:hover div {
+  background-color: #e2e2e2;
+}
+
+/* Elemen yang akan disembunyikan sebelum di-scroll */
+.home, .home-btn, .service, .about-text, .about-img, .brand, .tim-img, .gallery {
+  transition: opacity 0.5s ease;
+  opacity: 0; /* Dimulai dengan tidak terlihat */
+}
+
+/* Gambar di dalam .service */
+.service img {
+  height: 92px;
+  filter: invert(1);
+}
+
+/* Tombol WhatsApp mengapung */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 50px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-float img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* Media queries untuk mobile */
+@media (max-width: 768px) {
+  /* Ukuran WhatsApp button */
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .whatsapp-float img {
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Ukuran gambar team di mobile */
+  .team-photo {
+    height: auto; /* Biarkan tinggi menyesuaikan */
+    max-height: 400px; /* Batasi tinggi maksimal */
+  }
+
+  /* Galeri gambar */
+  .gallery img {
+    height: auto; /* Sesuaikan tinggi secara otomatis di mobile */
+  }
+
+  /* Swiper testimonial */
+  .testimonial-content {
+    width: 100%; /* Sesuaikan width dengan layar mobile */
+  }
+
+  /* Sesuaikan container di mobile */
+  .container {
+    padding: 0 10px; /* Tambahkan padding sedikit di sisi kiri dan kanan */
+  }
+}
