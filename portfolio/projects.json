@@ -1,0 +1,75 @@
+[
+    {
+      "title": "Toko Kertas (FE)",
+      "description": "My First Front End project. Aplikasi Kasir Untuk Penjualan Berbagai Macam Kertas",
+      "image": "https://github.com/DhamarPutra/db_image/blob/main/kasir-fe.png?raw=true",
+      "link": "https://dhamarputra.github.io/TokoKertas"
+    },
+    {
+      "title": "Toko Kertas (BE)",
+      "description": "My First Back End project. Aplikasi Kasir Untuk Penjualan Berbagai Macam Kertas",
+      "image": "https://github.com/DhamarPutra/db_image/blob/main/kasir-be.png?raw=true",
+      "link": "https://lavender-okapi-621740.hostingersite.com/"
+    },
+    {
+      "title": "Logistik",
+      "description": "Landing Page Untuk Perusahaan Logistik",
+      "image": "https://github.com/DhamarPutra/db_image/blob/main/logistik.png?raw=true",
+      "link": "https://dhamarputra.github.io/logistik"
+    },
+    {
+      "title": "Web Fashion",
+      "description": "Katalog Fashion Bertema Hutan Dan Natural",
+      "image": "https://github.com/DhamarPutra/db_image/blob/main/web-fashion.png?raw=true",
+      "link": "https://panjul1910.github.io/web-fashion"
+    },
+    {
+      "title": "Logistik Collab",
+      "description": "Landing Page Untuk Perusahaan Logistik Dibuat Oleh Beberapa Orang",
+      "image": "https://github.com/DhamarPutra/db_image/blob/main/logistik-collab.png?raw=true",
+      "link": "https://dhamarputra.github.io/logistik_collab"
+    },
+    {
+      "title": "Admin Logistik",
+      "description": "Admin Page Untuk Perusahaan Logistik Dibuat Oleh Beberapa Orang",
+      "image": "https://github.com/DhamarPutra/db_image/blob/main/admin-logistik.png?raw=true",
+      "link": "http://pki.rf.gd"
+    },
+    {
+      "title": "Link Tree",
+      "description": "Link Tree Front-End",
+      "image": "https://github.com/DhamarPutra/db_image/blob/main/linktree.png?raw=true",
+      "link": "https://dhamarputra.github.io/LinkTree"
+    },
+    {
+      "title": "Bengkel",
+      "description": "Landing Page Bengkel Dengan Tailwind",
+      "image": "https://github.com/DhamarPutra/db_image/blob/main/bengkel.png?raw=true",
+      "link": "https://dhamarputra.github.io/Bengkel/"
+    },
+    {
+      "title": "Florist",
+      "description": "Landing Page Florist Dengan Tailwind",
+      "image": "https://github.com/DhamarPutra/db_image/blob/main/florist.png?raw=true",
+      "link": "https://dhamarputra.github.io/LinkTree"
+    },
+    {
+      "title": "Saloot Quiz App",
+      "description": "Aplikasi Kuis Menggunakan ReactJS & ExpressJS",
+      "image": "https://github.com/DhamarPutra/db_image/blob/main/saloot.png?raw=true",
+      "link": "https://saloot.isc-unpam.my.id/"
+    },
+    {
+      "title": "New Portofolio",
+      "description": "Portofolio Baru Menggunakan HTML & CSS.",
+      "image": "https://github.com/DhamarPutra/db_image/blob/main/new-porto.png?raw=true",
+      "link": "https://dhamarputra.github.io/NewPortofolio"
+    },
+    {
+      "title": "Coming Soon",
+      "description": "Front End With Bootstrap",
+      "image": "",
+      "link": ""
+    }
+  ]
+  
